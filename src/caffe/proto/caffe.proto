@@ -449,8 +449,8 @@ message TransformationParameter {
 }
 
 message MyDiffusionParameter {
-optional string seq_x = 1 [default = "{1,-1,0,0}"];
-optional string seq_y = 2 [default = "{0,0,1,-1}"];
+optional string seq_x = 1 [default = "{0,1,0,-1,0}"];
+optional string seq_y = 2 [default = "{0,0,1,0,-1}"];
 optional int32 iter = 4 [default = 1];
 optional bool istanh = 5 [default = true];
 optional float tanh_scale = 6 [default = 1.5];
@@ -458,8 +458,8 @@ optional int32 tanh_skip = 7 [default  = 1];
 optional int32 tanh_skip_start = 8 [default = 0];
 }
 message MyDiffusion2Parameter {
-optional string seq_x = 1 [default = "{1,-1,0,0}"];
-optional string seq_y = 2 [default = "{0,0,1,-1}"];
+optional string seq_x = 1 [default = "{0,1,0,-1,0}"];
+optional string seq_y = 2 [default = "{0,0,1,0,-1}"];
 optional int32 iter = 4 [default = 1];
 optional int32 normalize_skip = 7 [default  = 1];
 optional int32 normalize_skip_start = 8 [default = 0]; //default=0 means it will start its first normalization at iter=normalize_skip                         
